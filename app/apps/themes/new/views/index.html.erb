@@ -1,0 +1,57 @@
+<span class="close-me">X</span>
+
+
+
+<% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).take(1).each_with_index do |post, index| %>
+    <header class="main-bg" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)" id="main">
+	    <div class="main-content">
+	        <%= raw post.the_content %>
+	    </div>
+    </header>
+<% end %>
+
+
+<% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).drop(1).each_with_index do |post, index| %>
+    <article class="contact-page" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)" id="contact-page">
+	    <div class="main-content">
+	        <%= raw post.the_content %>
+	    </div>
+    </article>
+<% end %>
+
+
+<div class="outer-box" id="blog-posts">
+	<hr class="top" />
+		<h2>Blog</h2>
+		<span class="arrow">scroll<span>&raquo;</span></span>
+	<div class="posts"">
+
+		<% (current_site.the_post_type("blog").the_posts.decorate rescue {}).each_with_index do |post, index| %>
+		    <a href="<%= post.the_url %>" class="mini-blog" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
+		        <h1 class="section-header"><%= raw post.title %></h1>
+		        <time datetime="" class="entry-date">– <%= post.published_at.strftime("%B %d, %Y") %> –</time>
+		    </a>
+		<% end %>
+	</div>
+
+	<hr class="bottom" />
+
+</div>
+
+<div class="outer-box from-left" id="portfolio-posts">
+	<hr class="top" />
+		<h2>Portfolio</h2>
+		<span class="arrow">scroll<span>&raquo;</span></span>
+	<div class="posts"">
+
+		<% (current_site.the_post_type("portfolio").the_posts.decorate rescue {}).each_with_index do |post, index| %>
+		    <a href="<%= post.the_url %>" class="mini-portfolio" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
+		        <h1 class="section-header"><%= raw post.title %></h1>
+		        <time datetime="" class="entry-date">– <%= post.published_at.strftime("%B %d, %Y") %> –</time>
+		    </a>
+		<% end %>
+	</div>
+
+	<hr class="bottom" />
+
+</div>

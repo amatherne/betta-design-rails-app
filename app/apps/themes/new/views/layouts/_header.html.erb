@@ -1,0 +1,28 @@
+<div class="header">
+            <a id="logo" class="logo" href="<%= current_site.the_url %>"><%= image_tag current_site.the_logo %></a> 
+
+            <span class="hamburger">
+                – menu –
+            </span>
+        <div id="header" class="responsive-menu ">
+
+            <%= raw get_nav_menu('main_menu') %> 
+
+            <div class="dashboard">
+                
+                <% if signin?  %>
+                
+                        <a href="<%= cama_admin_dashboard_path %>">Edit Site</a>
+                        <a href="<%= cama_admin_logout_path %>">Logout</a>
+                
+                <% else %>
+            
+                    <a class="login" href="<%= cama_admin_login_path %>">Login</a>
+
+                <% end %>
+            
+            </div>
+
+        </div>
+
+</div>

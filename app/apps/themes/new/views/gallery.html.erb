@@ -1,0 +1,20 @@
+<div class="container-fluid gallery-post">
+    <%= render partial: 'partials/breadcrumb', locals: {breadcrumb: @post.the_breadcrumb} %>
+    <div class="row">
+        <div class="col-md-12 post-view">
+            <article class="post-content">
+                <h1><%= @post.the_title %></h1> 
+                <div class="date">
+                    <time datetime=""><%= @post.the_created_at %></time>
+                </div>
+                <div class="item-content">
+                    <%= @post.render_fields %>
+
+                </div>
+
+                <!-- custom fields -->
+
+            </article>
+        </div>
+    </div>
+</div>
