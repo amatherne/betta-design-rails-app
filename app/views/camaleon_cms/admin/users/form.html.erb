@@ -53,12 +53,22 @@
                         <% end %>
                         <% if @user.admin? %>
 
-                        <div class="">
-                            <%= f.label "#{t('camaleon_cms.admin.table.role')}", class: "control-label" %>
                             <div class="">
-                                <%= f.select :role,current_site.user_roles.reorder(:name).decorate.map{|role| [role.the_title, role.slug]}, {}, {:class => "form-control required"}%>
+                                <%= f.label "#{t('camaleon_cms.admin.table.role')}", class: "control-label" %>
+                                <div class="">
+                                    <%= f.select :role,current_site.user_roles.reorder(:name).decorate.map{|role| [role.the_title, role.slug]}, {}, {:class => "form-control required"}%>
+                                </div>
                             </div>
-                        </div>
+                        <% end %>
+
+                        <% if @user.new_record? %>
+
+                            <div class="">
+                                <%= f.label "#{t('camaleon_cms.admin.table.role')}", class: "control-label" %>
+                                <div class="">
+                                    <%= f.select :role,current_site.user_roles.reorder(:name).decorate.map{|role| [role.the_title, role.slug]}, {}, {:class => "form-control required"}%>
+                                </div>
+                            </div>
                         <% end %>
 
                         
