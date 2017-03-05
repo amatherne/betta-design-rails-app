@@ -1,0 +1,6 @@
+<a class="item" rel="bookmark" href="<%= post.the_url %>" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
+    <h3 class="entry-title"><%= post.the_title %></h3>
+    <time datetime="" class="entry-date">– <%= post.published_at.strftime("%B %d, %Y") %> –</time>
+</a>
+
+

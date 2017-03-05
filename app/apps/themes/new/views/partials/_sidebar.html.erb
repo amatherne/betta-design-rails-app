@@ -1,0 +1,23 @@
+<% if post.has_thumb? %>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <%= raw post.the_link_thumb({}, {class: "img-responsive img-rounded col-md-12 col-lg-12"}) %>
+        </div>
+    </div>
+<%  end %>
+
+
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Recent Articles</h2>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <% current_site.the_contents(@post_type.slug).order(created_at: :desc).limit(7).decorate.each do |p| %>
+                <li><a href="<%= p.the_url %>"><%= p.the_title %></a></li>
+            <% end %>
+        </ul>
+    </div>
+</div>

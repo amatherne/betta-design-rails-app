@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+
+    <div class="main-bg portfolio" style="background-image: url(<%= raw @post.the_thumb_url() if @post.has_thumb?%>)">
+
+        <div class="blog-content">
+            <h1><%= @post.the_title %></h1>
+            <time datetime="" class="entry-date">– <%= @post.published_at.strftime("%B %d, %Y") %> –</time>
+            <%= raw @post.the_content %>
+
+            <div class="gallery">
+
+                <h1>Gallery</h1>
+                <% @post.the_attribute_fields('photo').each do |panel, values| %>
+                    <div class="item">
+                    <div class="image" style="background-image: url(<%= panel.values[0] %>)"></div>
+                        <h3><%= panel.values[1] %></h3>
+                        <p><%= panel.values[2] %></p>
+                    </div>
+
+                    <div class="item modal " >
+                        <span class="next">next</span>
+                        <span class="previous">previous</span>
+                        <span class="close-modal">close</span>
+                        <img src="<%= panel.values[0] %>">
+                        <h3><%= panel.values[1] %></h3>
+                        <p><%= panel.values[2] %></p>
+                    </div>
+
+
+
+
+                <% end %>    
+            </div>
+        </div>
+
+    </div>
+	
+</div>

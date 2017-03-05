@@ -30,7 +30,7 @@ module Themes::New::CustomHelper
   end
     def new_extra_custom_fields(args)
       args[:fields][:my_slider] = {
-          key: 'my_slider',
+          key: 'gallery',
           label: 'My Slider',
           render: theme_view('custom_field/my_slider.html.erb'),
           options: {

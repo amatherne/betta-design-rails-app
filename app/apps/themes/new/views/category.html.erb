@@ -1,33 +1,18 @@
-<article id="category-view" class="category_<%= @category.slug %>">
-    <%= render partial: 'partials/breadcrumb', locals: {breadcrumb: @category.the_breadcrumb } %>
-    <h1><%= @category.the_title %></h1>
-    <div class="content">
-        <%= raw @category.the_content %>
-    </div><br><br>
+<% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).drop(1).take(1).each_with_index do |post, index| %>
+    <header class="main-bg cats" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)" id="main">
 
-    <% if @children.present? %>
-        <div class="panel panel-primary no-line">
-            <div class="panel-heading">Sub Categories</div>
-            <div class="panel-body">
-                <%= render partial: "partials/categories_list", locals: {categories: @children } %>
-            </div>
-        </div>
-    <% end %>
+    </header>
+<% end %>
 
-    <div class="panel panel-primary post_list no-line">
-        <div class="panel-heading">Content</div>
-        <div class="panel-body">
-            <div class="row">
+<article id="category-view" class="category_<%= @category.slug %>" >
+  
+    <h1>Portfolio / <%= @category.the_title %></h1>
+
                 <% @posts.each_with_index do |post, index| %>
                     <%= raw "<div class='clearfix'></div>" if index%3 == 0 && index > 0 %>
                     <%= render partial: 'partials/post_list_item', locals: {post: post.decorate} %>
                 <% end %>
-            </div>
             <%= content_tag("div", raw(ct('no_contents_found', default: 'No contents found')), class: "alert alert-warning") if @posts.empty? %>
-            <%= raw cama_do_pagination(@posts) %>
-        </div>
-    </div>
-
 </article>
 
 

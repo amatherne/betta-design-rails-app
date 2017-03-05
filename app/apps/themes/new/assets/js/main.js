@@ -46,6 +46,7 @@ $(document).ready(function() {
     $('a[href$="#contact"]').click(function() {
         $('.main-bg').toggleClass('dim');
         $('#contact-page').toggleClass('show');
+        $('.contact-page').toggleClass('show');
         $('.close-me').toggleClass('show');
         $('.responsive-menu.expand.raise').toggleClass('expand raise');
 
@@ -56,6 +57,21 @@ $(document).ready(function() {
         $('.main-bg').toggleClass('dim');
 
     })
+
+    $('.close-modal').click(function() {
+        $("[class$='show']").toggleClass('show');
+        $('.main-bg').toggleClass('dim');
+
+    })
+    $('.gallery .item').click(function() {
+        // $("[class$='show']").toggleClass('show');
+        $(this).next('.modal').toggleClass('show');
+        $('.close-modal').addClass('show');
+        $('.main-bg').toggleClass('dim');
+
+    })
+
+
 
     // })
 

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+
+
+    <div class="main-bg blog" style="background-image: url(<%= raw @post.the_thumb_url() if @post.has_thumb?%>)">
+
+        <div class="blog-content">
+            <h1><%= @post.the_title %></h1>
+            <time datetime="" class="entry-date">– <%= @post.published_at.strftime("%B %d, %Y") %> –</time>
+            <%= raw @post.the_content %>
+        </div>
+    </div>
+    
+    <%= render partial: 'partials/comments', locals: {post: @post} if @post.can_commented? %>
+
+
+</div>

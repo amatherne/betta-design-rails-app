@@ -1,5 +1,4 @@
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+class Blog < ActiveRecord::Base
 	def next
 	    Blog.where("id > ?", id).order(id: :asc).limit(1).first
 	end
@@ -7,5 +6,4 @@ class ApplicationRecord < ActiveRecord::Base
 	def prev
 	     Blog.where("id < ?", id).order(id: :desc).limit(1).first
 	end
-
 end
