@@ -1,607 +1,648 @@
-.main-bg {
+.main-bg.home {
     position: relative;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 1;
     opacity: 1;
     @include transition(all 0.3s ease);
-    &.dim {
-        opacity: 0.2;
-    }
+    // &.dim {
+    //     opacity: 0.2;
+    // }
     &:before {
         content: '';
         position: absolute;
-        width: 80vw;
-        height: 80vh;
-        opacity: 0.8;
-        background-color: $pr-br-2;
-        z-index: -1;
-        top: 10vh;
-        left: 10vw;
-        right: 10vw;
-        bottom: 10vh;
-        mix-blend-mode: exclusion;
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        width: 80vw;
-        height: 10vh;
-        top: 0;
-        left: 10vw;
-        opacity: 1;
-        z-index: 0;
-        background: $pr-br-2;
-        mix-blend-mode: difference;
-    }
-}
-
-.center-piece {
-    position: relative;
-    width: 70vw;
-    // height:50vh;
-    @include margin(25vh auto);
-    // opacity: 0.8;
-    @include font(0.5);
-    .triangle {
-        $triangle: 100px;
-        position: relative;
-        width: 0;
-        height: 0;
-        border-left: $triangle solid transparent;
-        border-right: $triangle solid transparent;
-        border-bottom: $triangle*1.1 solid $pr-br-1;
-        @include margin(0 auto);
-        display: block;
-        z-index: 5;
-        mix-blend-mode: overlay;
-    }
-    h1 {
-        position: relative;
-        text-align: center;
-        @include font(5);
-        letter-spacing: 7px;
-        letter-spacing: 4px;
-        font-weight: $light;
-        font-family: $display;
-        color: $pr-br-1;
-        text-transform: uppercase;
-        width: 70vw;
-        @include margin(0 auto);
-        text-shadow: 3px 3px 1px $shadowcolor, 2px 2px 1px darken($shadowcolor, 25%), 1px 1px 1px darken($shadowcolor, 50%);
-        z-index: 5;
-        span {
-            display: block;
-            @include font(0.93);
-            font-weight: $light;
-            font-family: $display;
-            color: $pr-br-1;
-            text-transform: uppercase;
-            @include margin(-0.2em 0 0);
-        }
-        &.second {
-            // display: none;
-            position: absolute;
-            bottom: 0;
-            // left: 8px;
-            left: 4px;
-            z-index: 4;
-        }
-    }
-    .talents {
-        position: absolute;
-        bottom: -2em;
-        left: 0;
-        width: 70vw;
-        display: block;
-        text-align: center;
-        @include font(1.1);
-        letter-spacing: 7px;
-        letter-spacing: 4px;
-        font-weight: $light;
-        font-family: $display;
-        color: $pr-br-1;
-    }
-    .triangle,
-    .talents,
-    h1 {
-        @include transition(all 0.3s linear);
-    }
-}
-
-// .contact-page {
-//     position: absolute;
-//     @include transform(translateX(300%));
-//     top: 15vh;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     z-index: -100;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center center;
-//     width: 100%;
-//     height: 70vh;
-//     opacity: 0;
-//     @include gradient-three(darken($pr-br-2, 30%), darken($pr-br-2, 15%), darken($pr-br-2, 30%));
-//     @include transition(all 0.3s 0.5s linear, opacity 0.8s 0.1s linear);
-//     &.show {
-//         @include transform(translateX(0%));
-//         z-index: 100;
-//         opacity: 1;
-//     }
-// }
-.outer-box {
-    position: absolute;
-    overflow: hidden;
-    @include transform(translateX(300%));
-    top: 5vh;
-    bottom: 5vh;
-    left: 0;
-    right: 0;
-    z-index: -100;
-    width: 100%;
-    height: 90vh;
-    opacity: 0;
-    &.from-left {
-        @include transform(translateX(-300%));
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: .75;
-        background-color: $se-br-2;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.4;
+        background-color: $pr-br-1;
         z-index: -1;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        overflow: hidden;
-        // overflow-x: hidden;
-        // border-top:2px solid $pr-br-1;
-        // border-bottom:2px solid $pr-br-1;
-        // mix-blend-mode: exclusion;
-        // @include gradient-three(darken($pr-br-2, 22%), darken($pr-br-2, 23%), darken($pr-br-2, 22%));
+        mix-blend-mode: exclusion;
     }
-    &#contact-page {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-
-
-        form.railscf-form-group {
-            @include padding($lg-sp-unit*1.5 2vw);
-            // border: 2px solid $pr-br-2;
-            // max-width: 500px;
-            width:95%;
-            height:100vh;
-            overflow:hidden;
-            @include margin(0 auto);
-            display: block;
-            overflow-y: scroll;
-            visibility: visible;
-            // border-radius: 0.3em;
-            background-color: rgba(1,34,64,0.4);
-            // background-color: transparent;
-            // .btn-default {
-            //     @include font(1);
-            //     @include margin($sm-sp-unit 0);
-            // }
-            .form-group {
-                max-width: 400px;
-                @include margin(0.7em auto);
-                label,
-                input,
-                textarea {
-                    @include padding($sm-sp-unit);
-                    border: none;
-                    @include font(1);
-                    display: block;
-                    width: 100%;
-                    font-family: $font;
-                }
-                label {
-                    @include margin($sm-sp-unit 0 0);
-                    font-weight: $light;
-                    text-transform: lowercase;
-                    color:$se-br-1;
-                }
-                textarea {
-                    width: 100%;
-                    min-height: 10em !important;
-                }
-                input,
-                textarea {
-                    border-bottom: 2px solid $pr-br-1;
-                    background-color: $se-br-1;
-                    opacity: 0.4;
-                    color: $se-br-2;
-                    @include transition(all 0.3s linear);
-                    &:focus {
-                        opacity: 0.8;
-                        background-color: $se-br-1;
-                    }
-                }
-                .input-group-captcha {
-                    width: 100%;
-                    img {
-                        @include margin($sm-sp-unit 0);
-                        max-width: 200px;
-                    }
-                }
-            }
-        }
-        &:before {
-            opacity: .4;
-        }
-    }
-    h2 {
-        text-align: center;
-        // font-family: $display;
-        text-transform: uppercase;
-        font-weight: $reg;
-        // letter-spacing: .1em;
-        color: $pr-br-1;
-        @include font(2.5);
+    .main-content {
         position: absolute;
-        display: block;
-        top: 1em;
-        left: 25%;
-        width: 50%;
-        // max-width: 500px;
-        // @include margin(2em auto -4em);
-    }
-    .arrow {
-        position: fixed;
-        display: block;
-        bottom: 10vh;
-        right: 5vw;
-        width: 10vw;
-        color: $pr-br-1;
-        @include font(1);
-        text-align: right;
-        z-index: 50;
-        span {
-            display: block;
-            color: $pr-br-1;
-            @include font(3.5);
-            @include margin(-0.3em 0 0);
-            animation: pulse 1.4s infinite;
-        }
-    }
-    @keyframes pulse {
-        0%,
-        100% {
-            opacity: .5;
-        }
-        50% {
-            opacity: .9;
-        }
-    }
-    .contact-page {
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        // background-position: center center;
+        bottom: 5vh;
         width: 100%;
-        height: 100%;
-        max-width: 500px;
-        // max-height: 300px;
-        // height:70vh;
-        // @include margin(20vh 12.5vw);
-        @include margin(0 auto);
-        display: block !important;
-        overflow: hidden;
-        position: relative;
-        z-index: 2;
-        white-space: normal;
-        // @include transform(translateY(-300%));
-        // @include transition(all 0.5s 0.8s ease);
-        // box-shadow: 0px 0px 0px 8px $shadowcolor;
-        // &:after {
-        //     content: '';
-        //     position: absolute;
-        //     width: 100%;
-        //     height: 100%;
-        //     top: 0;
-        //     left: 0;
-        //     opacity: 1;
-        //     z-index: 0;
-        //     background: $pr-br-2;
-        //     mix-blend-mode: hard-light;
-        // }
-        p {
+        left: 0;
+        right: 0;
+        z-index: 10;
+        .center-piece {
             position: relative;
-            overflow: hidden;
-            display: block;
-            z-index: 10;
+            width: 90vw;
+            max-width: 500px;
             @include margin(0 auto);
+            @include font(0.64);
+            h1 {
+                position: relative;
+                text-align: center;
+                @include font(3.3);
+                // letter-spacing: 0.05em;
+                font-weight: $heavy;
+                font-family: $font;
+                color: $pr-br-2;
+                text-transform: uppercase;
+                @include margin(0 auto);
+                text-shadow: 2px 2px 1px $shadowcolor;
+                z-index: 5;
+            }
+            p {
+                text-align: center;
+                color: $pr-br-2;
+                font-weight: $light;
+                @include font(1.94);
+                letter-spacing: 0.09em;
+                text-transform: uppercase;
+                text-shadow: 5px 5px 3px $shadowcolor;
+            }
+            .btn_default {
+                @include margin($md-sp-unit*0.8 auto 0);
+                position: relative;
+                box-shadow: 5px 5px 3px $shadowcolor;
+                @include font(1.3);
+                color: $pr-br-2;
+                max-width: 120px;
+            }
         }
     }
-    .posts {
+}
+
+.section-title {
+    text-align: center;
+    @include font(2.8);
+    letter-spacing: -0.05em;
+    font-family: $font;
+    font-weight: $heavy;
+    width: 100%;
+    @include margin($md-sp-unit*0.8 auto 0);
+}
+
+.feature {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+    opacity: 1;
+    @include transition(all 0.3s ease);
+    box-shadow: 0px 6px 5px $shadowcolor;
+    border-bottom: 1px solid $se-br-4;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        // opacity: 0.4;
+        background-color: $se-br-3;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // mix-blend-mode: exclusion;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 120vh 130vh;
+        border-color: transparent transparent $pr-br-1 transparent;
+        opacity: 0;
+        @include transition(all 0.3s ease);
+    }
+    .img {
+        // background-color:$pr-br-1;
+        @include padding($md-sp-unit);
         position: relative;
         overflow: hidden;
-        overflow-x: auto;
-        white-space: nowrap;
-        .mini-blog,
-        .mini-portfolio,
-        .contact-page {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            width: 75vw;
-            height: 75vw;
-            max-width: 300px;
-            max-height: 300px;
-            // height:70vh;
-            @include margin(20vh 12.5vw);
-            display: inline-block !important;
-            overflow: hidden;
+        z-index: 1;
+        // width: 40%;
+        width: 90%;
+        height: 35vh;
+        max-width: 440px;
+        max-height: 300px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2vw solid transparent;
+        // @include margin($md-sp-unit 10% $lg-sp-unit 0);
+        @include margin($sm-sp-unit auto);
+        @include transition(all 0.3s ease);
+        // float: right;
+    }
+    .btn_default {
+        clear: both;
+        z-index: 5;
+        // @include margin($md-sp-unit*0.8 auto $md-sp-unit);
+        @include margin($md-sp-unit auto);
+        // position: absolute;
+        // bottom:0;
+        // right:0;
+        overflow: visible;
+        box-shadow: 5px 5px 3px $shadowcolor;
+        background: $se-br-3;
+        @include font(1.3);
+        color: $pr-br-1;
+        border: 6px solid $pr-br-1;
+        // max-width: 120px;
+        &:hover {
+            background-color: transparent;
+            border-color: $se-br-1;
+            color: $se-br-1;
+            box-shadow: 3px 3px 2px $shadowcolor;
+        }
+    }
+    .main-content {
+        position: relative;
+        width: 100%;
+        max-width: $maxwidth;
+        @include margin(0 auto);
+        @include padding($md-sp-unit 0 $lg-sp-unit);
+        z-index: 1;
+        .post-title,
+        .meta {
+            width: 95%;
+            max-width: 450px;
+            // display: inline-block;
+            display: block;
+            // @include margin(0 1% $sm-sp-unit 4%);
+            @include margin($md-sp-unit auto 0);
             position: relative;
-            z-index: 2;
-            white-space: normal;
-            @include transform(translateY(300%));
-            // @include transition(all 0.5s 0.8s ease);
-            border:10px solid darken($se-br-2,5%);
-            // box-shadow: 0px 0px 10px 3px rgba(118,254,235,0.3);
-            &:after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                opacity: 1;
-                z-index: 0;
-                background: $pr-br-2;
-                mix-blend-mode: hard-light;
-            }
-            &:nth-of-type(1) {
-                @include transition(all 0.4s ease .5s);
-            }
-            &:nth-of-type(2) {
-                @include transition(all 0.4s ease 1s);
-            }
-            &:nth-of-type(3) {
-                @include transition(all 0.4s ease 1.5s);
-            }
-            &:nth-of-type(4) {
-                @include transition(all 0.4s ease 2s);
-            }
-            // &:nth-of-type(4) {
-            //     @include transition(all 0.2s 2s ease);
-            // }
-            // &:nth-of-type(5) {
-            //     @include transition(all 0.2s 2.5s ease);
-            // }
-            &.show {
-                @include transform(translateY(0%));
-            }
-            h1 {
-                position: absolute;
-                overflow: hidden;
-                width: 80%;
-                left: 10%;
-                bottom: 20%;
-                z-index: 5;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+        .meta {
+            font-family: $font;
+            font-weight: $light;
+            letter-spacing: 0.1em;
+            color: $se-br-1;
+            // @include margin(0 4% $sm-sp-unit*2 1%);
+            @include font(1.25);
+            // @include padding(0 5% 0 0);
+            a,
+            time {
+                // display: block;
+                @include margin(0 0 0.3em);
                 color: $se-br-1;
-                font-family: $display;
-                font-weight: $heavy;
-                letter-spacing: 0.1em;
-                @include font(2);
-                line-height: 1.1em;
+                position: relative;
+                overflow: hidden;
+            }
+            ul {
+                display: block;
+                position: relative;
+                @include margin(0 0 0.3em);
+            }
+            li {
+                display: inline-block;
             }
             time {
-                position: absolute;
-                overflow: hidden;
-                width: 100%;
-                left: 0;
-                bottom: 8%;
-                z-index: 5;
-                text-align: center;
-                color: $se-br-1;
-                font-family: $font;
-                font-weight: $light;
-                font-style: italic;
-                letter-spacing: 0.1em;
-                @include font(0.8);
-                line-height: 1.1em;
+                display: block;
             }
         }
-        .mini-portfolio {
-            &:after {
-                mix-blend-mode: soft-light;
-            }
-            &:nth-of-type(1),
-            &:nth-of-type(4) {
-                display: none !important;
-            }
+        .post-title {
+            // text-align:right;
+            overflow: visible;
+            line-height: 0.8em;
+            font-family: $display;
+            font-weight: $heavy;
+            color: $pr-br-1;
+            letter-spacing: -0.05em;
+            // @include font(3.6);
+            @include font(2.6);
+            // @include padding(0 0 0 5%);
+            // @include margin(0 )
         }
     }
-    @include transition(transform 0.3s ease);
-    &.show {
-        @include transform(translateX(0%));
-        z-index: 100;
-        opacity: 1;
-    }
-}
-
-// ================================  Media Queries ========================
-@media screen and (min-width:$scrn-3) and (max-width:$scrn-7) and (max-height:500px) and (orientation:landscape) {
-    .outer-box {
-        h2 {
-            top: 0.4em;
-            @include font(2);
-        }
-        .posts {
-            .mini-blog,
-            .mini-portfolio {
-                width: 30vw;
-                height: 30vw;
-                max-width: 300px;
-                max-height: 300px;
-                @include margin(20vh 5vw);
-                h1 {
-                    @include font(1.3);
-                }
-                time {
-                    @include font(0.7);
-                }
-            }
-        }
-    }
-    .main-bg {
-        &:before {
-            width: 80vw;
-            height: 75vh;
-            top: 15vh;
-            left: 10vw;
-            right: 0;
-            bottom: 10vh;
-        }
-        &:after {
-            width: 80vw;
-            height: 15vh;
-            top: 0;
-            left: 10vw;
-        }
-    }
-}
-
-// ================================  Media Queries ========================
-@media screen and (min-width:$scrn-6) {
-    .main-bg {
-        &:before {
-            width: 80vw;
-            height: 80vh;
-            top: 10vh;
-            left: 20vw;
-            right: 0;
-            bottom: 10vh;
-        }
-        &:after {
-            width: 20vw;
-            height: 80vh;
-            top: 10vh;
-            left: 0;
-        }
-    }
-    .center-piece {
-        @include font(0.8);
-        .triangle {
-            $triangle: 160px;
-            border-left: $triangle solid transparent;
-            border-right: $triangle solid transparent;
-            border-bottom: $triangle*1.1 solid $pr-br-1;
-        }
+    .words {
+        // float:left;
+        // width:40%;
+        max-width: 450px;
+        @include margin($md-sp-unit auto);
+        display: block;
+        z-index: 3;
+        position: relative;
+        overflow: hidden;
+        // background:$se-br-3;
+        @include padding($sm-sp-unit);
         h1,
-        .talents {
-            letter-spacing: 7px;
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote {
+            font-family: $font;
+            font-weight: $reg;
+            @include font(1);
+            color: $se-br-4;
+            @include padding(0);
+            @include margin(0 0 $sm-sp-unit);
+            text-align: left;
+            letter-spacing: 0;
+            text-shadow: 0px 0px 2px rgba(248, 248, 221, 1);
         }
-        h1.second {
-            left: 8px;
-        }
-        .talents {
-            // width: 50vw;
-            left: 0;
-            bottom: -1.5em;
-        }
-    }
-    .outer-box {
-        .posts {
-            .mini-blog {
-                @include margin(20vh 5vw);
-            }
-        }
-    }
-}
-
-// ================================  Media Queries ========================
-@media screen and (min-width:$scrn-7) {
-    .main-bg {
-        &:before {
-            width: 75vw;
-            height: 80vh;
-            top: 10vh;
-            left: 15vw;
-            right: 10vw;
-            bottom: 10vh;
-        }
-        &:after {
-            width: 15vw;
-            left: 0;
-        }
-    }
-    .center-piece {
-        @include font(1);
-        .triangle {
-            $triangle: 195px;
-            border-left: $triangle solid transparent;
-            border-right: $triangle solid transparent;
-            border-bottom: $triangle*1.1 solid $pr-br-1;
-        }
+        ul,
+        ol,
         h1,
-        .talents {
-            letter-spacing: 7px;
-        }
-        h1.second {
-            left: 8px;
-        }
-        .talents {
-            // width: 50vw;
-            left: 0;
-            bottom: -1em;
-        }
-    }
-    .outer-box {
-        // opacity: .6;
-        // @include gradient-three(darken($se-br-2, 15%), darken($se-br-2, 17%), darken($se-br-2, 15%));
-        // & + #portfolio-posts {
-        //     // max-width: 700px;
-        //     @include padding(15vh 5vw);
-        // }
-        .posts {
-            .mini-blog {
-                @include margin(20vh 2vw);
-            }
-
-            .mini-portfolio {
-                @include margin(15vh 0 15vh 0);
-                max-width: 400px;
-                width:40vw;
-                height:40vw;
-                max-height: 400px;
-                &:nth-of-type(2) {
-                    @include margin(15vh 5vw 15vh 15vw);
-
-                }
-            }
+        h2,
+        h3,
+        h4,
+        h5,
+        h6, {
+            display: none;
         }
     }
 }
 
-// ================================  Media Queries ========================
-@media screen and (min-width:$scrn-9) {
-    .main-bg {
+.recent-posts {
+    position: relative;
+    overflow: hidden;
+    background-color: $se-br-2;
+    @include padding($md-sp-unit $md-sp-unit $lg-sp-unit);
+    .main-content {
+        position: relative;
         width: 100%;
-        &:before {
-            width: 80%;
-            height: 80%;
-            top: 10%;
-            left: 10%;
-            right: 10%;
-            bottom: 10%;
+        max-width: $maxwidth;
+        @include margin(0 auto);
+    }
+    .section-title {
+        color: $se-br-3;
+    }
+    .post-item {
+        position: relative;
+        display: block;
+        z-index: 1;
+        width: 95%;
+        max-width: 400px;
+        @include margin($md-sp-unit auto 0);
+        h1,
+        h3,
+        time {
+            color: $se-br-4;
+            display: block;
+            width: 90%;
+            @include margin($sm-sp-unit auto 0);
+            @include transition(all 0.5s ease);
+            text-shadow:2px 2px 1px rgba(51,55,69,0);
         }
+        h3 {
+            font-weight: $light;
+            @include font(2.5);
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+        }
+        h1 {
+            font-weight: $bold;
+            @include font(1.5);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        hr {
+            width: 80%;
+            height: 0.12vw;
+            border: none;
+            background-color: $se-br-4;
+            position: relative;
+            @include margin($md-sp-unit*0.8 auto $md-sp-unit*0.5);
+            box-shadow:2px 2px 1px rgba(51,55,69,0);
+
+            @include transition(all 0.5s ease);
+
+        }
+        time {
+            width: 85%;
+            letter-spacing: 0.1em;
+            @include font(1.1);
+        }
+        img {
+            border: 1vw solid $se-br-3;
+            // width:90%;
+            @include margin(5% 0);
+            box-shadow: 5px 5px 3px $shadowcolor;
+            @include transition(all 0.3s ease);
+        }
+        &:hover {
+        	h1,
+	        h3,
+	        time {
+	        	color:$se-br-3;
+            	text-shadow:2px 2px 1px rgba(51,55,69,0.4);
+
+	        }
+	        hr {
+	        	background-color:$se-br-3;
+            	box-shadow:2px 2px 1px rgba(51,55,69,0.4);
+
+	        }
+            img {
+                box-shadow: 2px 2px 1px $shadowcolor;
+            }
+        }
+    }
+}
+
+.main-bg.contact {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 1;
+    @include transition(all 0.3s ease);
+    box-shadow: 0px -5px 6px $shadowcolor;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        opacity: 0.7;
+        background-color: $se-br-1;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        mix-blend-mode: lighten;
+    }
+
+    h1 {
+    	    color: $se-br-3;
+            display: block;
+            width: 90%;
+            @include margin($sm-sp-unit auto 0);
+            letter-spacing: -0.05em;
+            text-align:center;
+            font-weight: $heavy;
+            @include font(3);
+    }
+    .main-content {
+        position: relative;
+        width: 100%;
+        max-width: $maxwidth;
+        @include margin(0 auto);
+        @include padding($md-sp-unit 0 $lg-sp-unit);
+        z-index: 1;
+    }
+    form.railscf-form-group {
+        @include padding($md-sp-unit 2vw $lg-sp-unit);
+        // border: 2px solid $pr-br-2;
+        // max-width: 500px;
+        width: 95%;
+        height: 100vh;
+        overflow: hidden;
+        @include margin(0 auto);
+        display: block;
+        overflow-y: scroll;
+        visibility: visible;
+        // border-radius: 0.3em;
+        // background-color: rgba(1, 34, 64, 0.4); 
+        // background-color: transparent;
+        // .btn-default {
+        //     @include font(1);
+        //     @include margin($sm-sp-unit 0);
+        // }
+        .form-group {
+            max-width: 400px;
+            @include margin(0.7em auto);
+            label,
+            input,
+            textarea {
+                @include padding($sm-sp-unit);
+                border: none;
+                @include font(0.9);
+                display: block;
+                width: 100%;
+                font-family: $font;
+            }
+            label {
+                @include margin($sm-sp-unit 0 0);
+                font-weight: $light;
+                text-transform: lowercase;
+                color: $se-br-3;
+            }
+            textarea {
+                width: 100%;
+                min-height: 10em !important;
+            }
+            input,
+            textarea {
+                border: 5px solid $pr-br-2;
+                background-color: $se-br-3;
+                opacity: 0.6;
+                border-radius:0;
+                color: $se-br-4;
+                @include transition(all 0.3s linear);
+                box-shadow:5px 5px 4px rgba(51,55,69,.5);
+                &:focus {
+                    opacity: 1;
+                    background-color: $se-br-3;
+                	box-shadow:3px 3px 2px rgba(51,55,69,.7);
+
+                }
+            }
+            .btn_default, button, .btn-default {
+            	background-color:$se-br-1;
+            	border-color:$se-br-1;
+            	border-width:5px;
+            	color:$se-br-3;
+            	border-radius:0;
+            	@include padding($sm-sp-unit $md-sp-unit);
+            	&:hover {
+            		color:$se-br-1;
+            		background-color:transparent;
+            	}
+            }
+            .input-group-captcha {
+                width: 100%;
+                img {
+                    @include margin($sm-sp-unit 0);
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
+
+// // ================================  Media Queries ========================
+// @media screen and (min-width:$scrn-3) and (max-width:$scrn-7) and (max-height:500px) and (orientation:landscape) {
+//     .outer-box {
+//         h2 {
+//             top: 0.4em;
+//             @include font(2);
+//         }
+//         .posts {
+//             .mini-blog,
+//             .mini-portfolio {
+//                 width: 30vw;
+//                 height: 30vw;
+//                 max-width: 300px;
+//                 max-height: 300px;
+//                 @include margin(20vh 5vw);
+//                 h1 {
+//                     @include font(1.3);
+//                 }
+//                 time {
+//                     @include font(0.7);
+//                 }
+//             }
+//         }
+//     }
+//     .main-bg {
+//         &:before {
+//             width: 80vw;
+//             height: 75vh;
+//             top: 15vh;
+//             left: 10vw;
+//             right: 0;
+//             bottom: 10vh;
+//         }
+//         &:after {
+//             width: 80vw;
+//             height: 15vh;
+//             top: 0;
+//             left: 10vw;
+//         }
+//     }
+// }
+// // ================================  Media Queries ========================
+@media screen and (min-width:$scrn-6) {
+    .main-bg.home .main-content .center-piece {
+        @include font(0.8);
+        .btn_default {
+            max-width: 150px;
+        }
+    }
+    .feature {
         &:after {
-            width: 10%;
-            height: 80%;
-            top: 10%;
-            left: 0;
+            opacity: 1;
+            border-width: 0 0 120vh 95vh;
+        }
+    }
+    .feature {
+        .img {
+            width: 45%;
+            height: 35vw;
+            @include margin($md-sp-unit 5% $lg-sp-unit 0);
+            float: right;
+            border-color: $pr-br-1;
+            // display: inline-block;
+        }
+        .main-content {
+            @include padding($md-sp-unit $sm-sp-unit $lg-sp-unit);
+            .post-title,
+            .meta {
+                width: 46%;
+                max-width: 100%;
+                display: inline-block;
+                @include margin(0 1% $sm-sp-unit);
+            }
+            .meta {
+                // @include margin(0 4% $sm-sp-unit*2 1%);
+                // @include padding(0 5% 0 0);
+            }
+            .post-title {
+                text-align: right;
+                @include font(2.8);
+                // @include padding(0 0 0 5%);
+            }
+        }
+        .words {
+            float: left;
+            width: 45%;
+            max-width: 450px;
+            @include margin($md-sp-unit 1%);
+        }
+        .btn_default {
+            @include margin($md-sp-unit 0 $md-sp-unit 22%);
+        }
+    }
+    .recent-posts {
+        .post-item {
+            display: inline-block;
+            width: 45%;
+            @include margin($md-sp-unit 2% 0);
+            vertical-align: top;
+        }
+    }
+}
+
+@media screen and (min-width:$scrn-7) {
+    .main-bg.home .main-content .center-piece {
+        @include font(1);
+        .btn_default {
+            max-width: 200px;
+        }
+    }
+    .feature {
+        &:after {
+            opacity: 1;
+            border-width: 0 0 120vh 120vh;
+        }
+    }
+}
+
+@media screen and (min-width:$scrn-8) {
+    .feature {
+        &:after {
+            border-width: 0 0 120vh 140vh;
+        }
+    }
+    .recent-posts {
+        .post-item {
+            display: inline-block;
+            width: 29%;
+            @include margin($md-sp-unit 2% 0);
+            vertical-align: top;
+        }
+    }
+}
+
+@media screen and (min-width:$scrn-9) {
+    .feature {
+        &:after {
+            border-width: 0 0 120vh 160vh;
+        }
+    }
+    .recent-posts {
+        .post-item {
+            display: inline-block;
+            width: 20%;
+            @include margin($md-sp-unit 2% 0);
+            vertical-align: top;
+            h3 {
+            	@include font(2);
+            }
+            h1 {
+            	@include font(1.2);
+            }
+            // hr {
+            //   		height:2px;
+            // }
+        }
+    }
+}
+
+@media screen and (min-width:$scrn-10) {
+    .feature {
+        &:after {
+            border-width: 0 0 120vh 180vh;
         }
     }
 }

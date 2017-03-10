@@ -1,18 +1,11 @@
-<% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).drop(1).take(1).each_with_index do |post, index| %>
-    <header class="main-bg cats" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)" id="main">
-
-    </header>
-<% end %>
-
-<article id="category-view" class="category_<%= @category.slug %>" >
-  
-    <h1>Portfolio / <%= @category.the_title %></h1>
+<section class="recent-posts category_<%= @category.slug %>">
+    <h2 class="section-title"><%= @category.the_title %> / Posts</h2>
+	<div class="main-content">
 
                 <% @posts.each_with_index do |post, index| %>
-                    <%= raw "<div class='clearfix'></div>" if index%3 == 0 && index > 0 %>
                     <%= render partial: 'partials/post_list_item', locals: {post: post.decorate} %>
                 <% end %>
             <%= content_tag("div", raw(ct('no_contents_found', default: 'No contents found')), class: "alert alert-warning") if @posts.empty? %>
-</article>
-
+	</div>
+</section>
 

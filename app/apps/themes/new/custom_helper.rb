@@ -34,7 +34,7 @@ module Themes::New::CustomHelper
           label: 'My Slider',
           render: theme_view('custom_field/my_slider.html.erb'),
           options: {
-              required: true,
+              required: false,
               multiple: true,
           },
           extra_fields:[

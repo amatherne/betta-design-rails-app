@@ -25,65 +25,12 @@
 
     <div class="content">
 
-        <span class="close-me">X</span>
 
         <%= yield %>
 
 
-        <% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).drop(1).take(1).each_with_index do |post, index| %>
-            <div class="outer-box " id="contact-page" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
-                <hr class="top" />
-                <h2>Contact</h2>
-                
-                    <div class="contact-page" >
-                        <p><%= raw post.the_content %></p>
-                    </div>
-                <hr class="bottom" />
-
-            </div>
-        <% end %>
 
 
-        <div class="outer-box" id="blog-posts">
-            <hr class="top" />
-                <h2>Blog</h2>
-                <span class="arrow">scroll<span>&raquo;</span></span>
-            <div class="posts">
-
-                <% (current_site.the_post_type("blog").the_posts.decorate rescue {}).each_with_index do |post, index| %>
-                    <a href="<%= post.the_url %>" class="mini-blog" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
-                        <h1 class="section-header"><%= raw post.title %></h1>
-                        <time datetime="" class="entry-date">– <%= post.published_at.strftime("%B %d, %Y") %> –</time>
-                    </a>
-                <% end %>
-            </div>
-
-            <hr class="bottom" />
-
-        </div>
-
-        <div class="outer-box from-left" id="portfolio-posts">
-            <hr class="top" />
-                <h2>Portfolio</h2>
-                <span class="arrow">scroll<span>&raquo;</span></span>
-                
-            <div class="posts"">
-                <% (current_site.the_post_type("portfolio").categories.decorate rescue {}).each_slice(6).each_with_index do |_cats, index| %>
-                        <% _cats.each do |cat| %>
-                                <% (current_site.the_post_type("portfolio").the_posts.decorate rescue {}).take(2).each_with_index do |post, index| %>
-
-                                    <a href="<%= cat.the_url %>" class="mini-portfolio" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
-                                        <h1 class="section-header" ><%= raw cat.the_title %></h1>
-                                    </a>
-            
-                                <% end %>
-                        <% end %>
-                <% end %>
-            </div>
-
-            <hr class="bottom" />
-
-        </div>
     </div>
 
     <!-- footer -->

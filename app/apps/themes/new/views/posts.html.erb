@@ -1,0 +1,79 @@
+    <% categories = @post.the_categories.decorate %>
+    <% if categories.present? %>
+    <% categories.each do |cat| %>
+<div class="post-page category_<%= cat.the_title %>">
+    <% end %>
+    <% end %>
+    <div class="container">
+        <div class="post-header" style="background-image: url(<%= raw @post.the_thumb_url() if @post.has_thumb?%>);">
+            <h1 class="post-title"><%= @post.the_title.truncate(100) %></h1>
+            <div class="meta">
+                <% tags = @post.the_tags.limit(6).decorate %>
+                <% if tags.present? %>
+                    <ul>
+                        <% tags.each do |post_tag| %>
+                            <li><a class="tag" href="<%= post_tag.the_url %>"><%= post_tag.the_title %> – </a></li>
+                        <% end %>
+                    </ul>
+                <% end %>
+                <time datetime="" class="entry-date"><%= @post.published_at.strftime("%B %d, %Y") if @post.published_at?%></time>
+            </div>
+        </div>
+
+        <article class="post-content">
+            
+            <div class="item-content">
+
+            <% item = @post.the_fields('item') %>
+            
+                <div class="tech">
+                    <h3>Tech Used</h3>
+                    <ul>
+                        <% item.each do |panel| %>
+                            <li><%= panel %></li>
+                        <% end %>  
+                    </ul>
+                </div>
+
+
+
+                <%= raw @post.the_content %>
+            </div>
+   
+            <aside class="recent">
+                <h1>Recent Posts</h1>
+                <% current_site.the_contents(@post_type.slug).order(published_at: :desc).limit(7).decorate.each do |p| %>
+                    <a href="<%= p.the_url %>">
+                        <h5><%= p.the_title.truncate(70) %></h5>
+                        <time datetime="" class="entry-date"><%= p.published_at.strftime("%B %d, %Y") if p.published_at?%></time>
+                    </a>
+                <% end %>
+            </aside>
+            <aside class="gallery">
+                <h1>Gallery</h1>
+
+                <% @post.the_attribute_fields('photo').each do |panel, values| %>
+                    <div class="item">
+                        <div class="image" style="background-image: url(<%= panel.values[0] %>)"></div>
+                        <h3><%= panel.values[1] %></h3>
+                        <p><%= panel.values[2] %></p>
+                    </div>
+                    <div class="item modal " >
+                        <span class="next">next</span>
+                        <span class="previous">previous</span>
+                        <span class="close-modal">close</span>
+                        <img src="<%= panel.values[0] %>">
+
+                    </div>
+                <% end %>    
+            </aside>
+        </article>
+    </div>
+</div>
+<% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).drop(2).take(1).each_with_index do |post, index| %>
+    <section class="main-bg contact" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
+        <div class="main-content">
+            <%= raw post.the_content %>
+        </div>
+    </section>
+<% end %>

@@ -2,13 +2,69 @@
 
 
 <% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).take(1).each_with_index do |post, index| %>
-    <header class="main-bg" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)" id="main">
+    <section class="main-bg home" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
 	    <div class="main-content">
 	        <%= raw post.the_content %>
 	    </div>
-    </header>
+    </section>
 <% end %>
 
 
 
+<% (current_site.the_post_type("posts").the_posts.decorate rescue {}).take(1).each_with_index do |post, index| %>
+    <section class="feature">
+    	<h2 class="section-title">Feature</h2>
+	    <div class="main-content">
+	        <h1 class="post-title"><%= raw post.the_title.truncate(45) %></h1>
+	        
+	        <div class="meta">
+				<% tags = post.the_tags.limit(6).decorate %>
+				<% if tags.present? %>
+					<ul>
+			            <% tags.each do |post_tag| %>
+			                <li><a class="tag" href="<%= post_tag.the_url %>"><%= post_tag.the_title %>  /</a></li>
+			            <% end %>
+		            </ul>
+				<% end %>
+		        <time datetime="" class="entry-date"><%= post.published_at.strftime("%B %d, %Y") if post.published_at?%></time>
+	        </div>
 
+	    	<div class="img" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>);"></div>
+
+	        <div class="words"><%= raw post.the_content.truncate(800) %></div>
+
+	        <a href="<%= raw post.the_url %>" class="btn_default">See Full Post</a>
+	    </div>
+    </section>
+<% end %>
+<section class="recent-posts">
+    <h2 class="section-title">Recent Posts</h2>
+	<div class="main-content">
+
+	<% (current_site.the_post_type("posts").the_posts.decorate rescue {}).drop(1).take(8).each_with_index do |post, index| %>
+	    <a href="<%= post.the_url %>" class="post-item">
+    		<% tags = post.the_tags.limit(1).decorate %>
+			<% if tags.present? %>
+		            <% tags.each do |post_tag| %>
+		               	<h3><%= post_tag.the_title %></h3>
+		            <% end %>
+			<% end %>
+	    	<img src="<%= raw post.the_thumb_url() if post.has_thumb?%>">
+
+	        <h1><%= raw post.the_title.truncate(55) %></h1>
+	        <hr />
+	        <time datetime="" class="entry-date"><%= post.published_at.strftime("%B %d, %Y") if post.published_at?%></time>
+
+	        <!-- <p><%= raw post.the_content %></p> -->
+	    </a>
+	<% end %>
+	</div>
+</section>
+
+<% (current_site.the_post_type("front-page").the_posts.decorate rescue {}).drop(2).take(1).each_with_index do |post, index| %>
+    <section class="main-bg contact" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)">
+	    <div class="main-content">
+	        <%= raw post.the_content %>
+	    </div>
+    </section>
+<% end %>

@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: db/betta.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -25,7 +25,7 @@ production:
   pool: 5
   timeout: 5000
   
-  database: miranda-angeline
-  username: matherne.projects@gmail.com
+  database: betta-design
+  # username: matherne.projects@gmail.com
   password: FrankenBorg1
 

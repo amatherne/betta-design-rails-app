@@ -1,11 +1,15 @@
 <div class="header">
-            <a id="logo" class="logo" href="<%= current_site.the_url %>"><%= image_tag current_site.the_logo %></a> 
+            <!-- <a id="logo" class="logo" href="<%= current_site.the_url %>"><%= image_tag current_site.the_logo %></a>  -->
 
+            <a class="site-title" href="/">
+                <h1>betta</h1>
+                <h2>design</h2>
+            </a>
             <span class="hamburger">
-                – menu –
+                nav
             </span>
         <div id="header" class="responsive-menu ">
-
+            <span class="close">X</span>
             <%= raw get_nav_menu('main_menu') %> 
 
             <div class="dashboard">
@@ -20,6 +24,8 @@
                     <a class="login" href="<%= cama_admin_login_path %>">Login</a>
 
                 <% end %>
+ 
+
             
             </div>
 
