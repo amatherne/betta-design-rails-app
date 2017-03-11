@@ -1,0 +1,2311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 51, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_reset.scss */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+  outline: none;
+}
+
+/* iPhone first gen */
+/* Samsung Nexus S */
+/* Droid Razr */
+/* iPhone 4 and 5 */
+/* Galaxy Nexus */
+/* iPhone 6 / Google Nexus */
+/* Galaxy Note */
+/* Iphone 6+ */
+/* Desktop */
+/* Desktop */
+/* ========================= Colors ============================ */
+/* ========================== Font ============================= */
+/* line 1, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+body,
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* line 8, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+html {
+  overflow-x: hidden;
+}
+
+/* line 12, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+body {
+  position: relative;
+  width: 100%;
+}
+
+/* line 69, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #d96459;
+}
+
+/* line 78, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+a,
+h1,
+h2,
+h3,
+h4,
+h4,
+p,
+span,
+input,
+textarea,
+label,
+ul,
+ol,
+li {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-size: 0.625px;
+  font-size: 1em;
+  color: #008988;
+}
+
+/* line 101, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+h1 {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.5625px;
+  font-size: 2.5em;
+}
+
+/* line 107, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+h2 {
+  font-family: "neuzeit-grotesk-condensed", sans-serif;
+  font-weight: 900;
+  font-size: 1.1875px;
+  font-size: 1.9em;
+}
+
+/* line 113, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+h4 {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 0.9375px;
+  font-size: 1.5em;
+}
+
+/* line 119, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+h5 {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 0.6875px;
+  font-size: 1.1em;
+}
+
+/* line 125, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+h6 {
+  font-family: "neuzeit-grotesk-condensed", sans-serif;
+  font-weight: 200;
+  font-size: 0.5px;
+  font-size: 0.8em;
+}
+
+/* line 131, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+em {
+  font-style: italic;
+}
+
+/* line 135, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 139, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+ul,
+ol {
+  position: relative;
+  list-style: initial;
+}
+
+/* line 145, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 149, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+img {
+  width: 100%;
+  position: relative;
+}
+
+/* line 154, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+
+/* line 159, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+/* line 162, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #daede2;
+  font-size: 0.9375px;
+  font-size: 1.5em;
+}
+
+/* line 168, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.container,
+.content {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 177, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+#logo {
+  display: none;
+}
+
+/* line 181, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.btn_default,
+button,
+.btn-default {
+  position: relative;
+  font-size: 0.8125px;
+  font-size: 1.3em;
+  padding: 0.75em;
+  background-color: #008988;
+  font-weight: 900;
+  font-family: "neuzeit-grotesk", sans-serif;
+  border: 3px solid #daede2;
+  display: block;
+  width: auto;
+  text-align: center;
+  max-width: 200px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 3px rgba(51, 55, 69, 0.7);
+}
+/* line 200, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.btn_default:hover,
+button:hover,
+.btn-default:hover {
+  background-color: transparent;
+  color: #f8f8dd;
+  border: 3px solid #f8f8dd;
+  box-shadow: 3px 3px 1px rgba(51, 55, 69, 0.7);
+}
+
+/* line 247, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.header {
+  position: relative;
+  max-width: 1180px;
+  background-color: transparent;
+  min-height: 0;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+@media screen and (min-width: 600px) {
+  /* line 247, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .header {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 850px) {
+  /* line 247, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .header {
+    width: 100%;
+  }
+}
+
+/* line 263, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+footer {
+  position: relative;
+  background-color: #333745;
+  min-height: 0;
+  padding: 1.5em;
+}
+/* line 269, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+footer .footer-nav {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 273, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+footer .footer-nav li {
+  list-style: none;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  margin: 0.5em 6.6%;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  vertical-align: top;
+}
+/* line 285, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+footer .copyright {
+  display: block;
+  width: 100%;
+  color: #f8f8dd;
+  text-align: center;
+  margin: 2.25em auto -1em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+
+/* line 298, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.site-title {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 20%;
+  display: block;
+  z-index: 10;
+  text-shadow: 2px 2px 1px rgba(51, 55, 69, 0.7);
+}
+/* line 307, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.site-title h1 {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-size: 1.1875px;
+  font-size: 1.9em;
+  font-weight: 900;
+  color: #daede2;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 -0.2em;
+  width: 100%;
+}
+/* line 317, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.site-title h2 {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-size: 0.66875px;
+  font-size: 1.07em;
+  font-weight: 200;
+  color: #daede2;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: block;
+  margin: 0 0 0 0.05em;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  /* line 298, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .site-title {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* line 346, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+  padding: 4.5em 1.5em;
+  z-index: 10;
+  transition: all 0.3s linear;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+/* line 356, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0.95;
+  z-index: 0;
+  background: transparent;
+}
+/* line 367, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu.expand {
+  position: fixed;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  transition: all 0.4s linear;
+}
+/* line 371, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu.expand:before {
+  background: #daede2;
+}
+/* line 376, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .close {
+  color: #d96459;
+  text-shadow: 2px 2px 1px rgba(51, 55, 69, 0.7);
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  opacity: 0.7;
+  font-size: 0.9375px;
+  font-size: 1.5em;
+}
+/* line 385, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .close:hover {
+  opacity: 0.95;
+}
+/* line 389, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu ul {
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+/* line 392, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu ul ul {
+  padding: 0 0 0 1.5em;
+}
+/* line 396, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu li {
+  position: relative;
+  padding: 0.1em;
+}
+/* line 400, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu a,
+.responsive-menu .user-name {
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  font-size: 0.75px;
+  font-size: 1.2em;
+  display: block;
+  overflow: hidden;
+  color: #d96459;
+  padding: 0.5em;
+  position: relative;
+  z-index: 1;
+  text-transform: lowercase;
+}
+/* line 417, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .dashboard {
+  padding: 1.5em;
+}
+/* line 419, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .dashboard .user-name {
+  font-weight: 700;
+  font-size: 0.9375px;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+/* line 424, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .dashboard a {
+  display: inline-block;
+}
+/* line 428, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .dropdown-menu {
+  max-height: 0;
+  background-color: transparent;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/* line 435, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .dropdown:hover .dropdown-menu,
+.responsive-menu .dropdown.drop .dropdown-menu {
+  max-height: 20em;
+  z-index: 5;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/* line 441, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.responsive-menu .fix-header {
+  background-color: #d96459;
+}
+
+/* line 446, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.hamburger {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 30vw;
+  max-width: 90px;
+  height: 5vh;
+  overflow: visible;
+  padding: 1.5em 0.75em;
+  font-family: "neuzeit-grotesk", sans-serif;
+  text-align: center;
+  color: #daede2;
+  letter-spacing: 0.3em;
+  text-shadow: 2px 2px 1px rgba(51, 55, 69, 0.7);
+}
+/* line 465, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+.hamburger .fa.fa-bars {
+  color: #d96459;
+  font-size: 0.8125px;
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+@media screen and (min-width: 750px) {
+  /* line 497, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .header {
+    z-index: 2;
+    min-height: 0.01em;
+    background-color: transparent;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  /* line 508, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .header.fix-header {
+    min-height: 5em;
+    z-index: 10;
+  }
+  /* line 513, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .header.fix-header li {
+    margin: 0;
+  }
+  /* line 516, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .header.fix-header .responsive-menu .dashboard {
+    top: 2.5em;
+  }
+
+  /* line 521, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  footer {
+    padding: 3em;
+  }
+  /* line 526, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  footer .footer-nav li {
+    width: 15.6%;
+    margin: 0.5em 0.5% 0;
+  }
+
+  /* line 532, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .logo {
+    max-width: 60px;
+  }
+
+  /* line 535, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .hamburger {
+    display: none;
+  }
+
+  /* line 538, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu {
+    position: absolute;
+    right: 2.2em;
+    top: 0;
+    width: auto;
+    max-width: 535px;
+    height: auto;
+    min-width: 5em;
+    overflow: visible;
+    padding: 0;
+    text-align: center;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  /* line 552, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu.expand:before {
+    background: transparent;
+  }
+  /* line 555, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu .close {
+    display: none;
+  }
+  /* line 558, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu ul,
+  .responsive-menu li {
+    padding: 0;
+  }
+  /* line 561, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu ul ul,
+  .responsive-menu li ul {
+    padding: 0;
+  }
+  /* line 567, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu.port a,
+  .responsive-menu.port .dashboard a {
+    color: #333745;
+  }
+  /* line 572, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu a {
+    color: #daede2;
+    text-align: center;
+    font-size: 0.53125px;
+    font-size: 0.85em;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  /* line 592, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu a:hover {
+    color: #333745;
+  }
+  /* line 596, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu li,
+  .responsive-menu li.dropdown {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 1em 0 0;
+    vertical-align: top;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-color: transparent;
+  }
+  /* line 606, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu:before {
+    background: transparent;
+  }
+
+  /* line 610, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu .dashboard {
+    margin: 0;
+    padding: 0;
+    max-width: 250px;
+    right: 0.5em;
+    position: absolute;
+    top: 4em;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  /* line 618, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu .dashboard a {
+    text-align: center;
+    font-size: 0.4375px;
+    font-size: 0.7em;
+    border: none;
+    margin: 0;
+    color: #daede2;
+  }
+  /* line 628, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .responsive-menu .dashboard a:hover {
+    color: #333745;
+  }
+
+  /* line 633, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .dropdown:hover,
+  .dropdown.drop {
+    z-index: 50;
+    background-color: #daede2;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  /* line 641, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_globals.scss */
+  .dropdown:hover .dropdown-menu,
+  .dropdown.drop .dropdown-menu {
+    max-height: 20em;
+    background-color: #daede2;
+    -webkit-transition: all 0.3s 0.4s linear;
+    -moz-transition: all 0.3s 0.4s linear;
+    transition: all 0.3s 0.4s linear;
+  }
+}
+/* line 1, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.home {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 15, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.home:before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4;
+  background-color: #d96459;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: exclusion;
+}
+/* line 29, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.home .main-content {
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+/* line 36, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.home .main-content .center-piece {
+  position: relative;
+  width: 90vw;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 0.4px;
+  font-size: 0.64em;
+}
+/* line 42, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.home .main-content .center-piece h1 {
+  position: relative;
+  text-align: center;
+  font-size: 2.0625px;
+  font-size: 3.3em;
+  font-weight: 900;
+  font-family: "neuzeit-grotesk", sans-serif;
+  color: #daede2;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-shadow: 2px 2px 1px rgba(51, 55, 69, 0.7);
+  z-index: 5;
+}
+/* line 55, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.home .main-content .center-piece p {
+  text-align: center;
+  color: #daede2;
+  font-weight: 200;
+  font-size: 1.2125px;
+  font-size: 1.94em;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 3px rgba(51, 55, 69, 0.7);
+}
+/* line 64, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.home .main-content .center-piece .btn_default {
+  margin: 1.2em auto 0;
+  position: relative;
+  box-shadow: 5px 5px 3px rgba(51, 55, 69, 0.7);
+  font-size: 0.8125px;
+  font-size: 1.3em;
+  color: #daede2;
+  max-width: 120px;
+}
+
+/* line 76, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.section-title {
+  text-align: center;
+  font-size: 1.75px;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 900;
+  width: 100%;
+  margin: 1.2em auto 0;
+}
+
+/* line 86, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 5px rgba(51, 55, 69, 0.7);
+  border-bottom: 1px solid #333745;
+}
+/* line 96, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature:before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: #f8f8dd;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 110, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 120vh 130vh;
+  border-color: transparent transparent #d96459 transparent;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 125, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .img {
+  padding: 1.5em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 90%;
+  height: 35vh;
+  max-width: 440px;
+  max-height: 300px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2vw solid transparent;
+  margin: 0.5em auto;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 145, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .btn_default {
+  clear: both;
+  z-index: 5;
+  margin: 1.5em auto;
+  overflow: visible;
+  box-shadow: 5px 5px 3px rgba(51, 55, 69, 0.7);
+  background: #f8f8dd;
+  font-size: 0.8125px;
+  font-size: 1.3em;
+  color: #d96459;
+  border: 6px solid #d96459;
+}
+/* line 160, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .btn_default:hover {
+  background-color: transparent;
+  border-color: #008988;
+  color: #008988;
+  box-shadow: 3px 3px 2px rgba(51, 55, 69, 0.7);
+}
+/* line 167, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5em 0 3em;
+  z-index: 1;
+}
+/* line 174, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content .post-title,
+.feature .main-content .meta {
+  width: 95%;
+  max-width: 450px;
+  display: block;
+  margin: 1.5em auto 0;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+/* line 186, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content .meta {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  color: #008988;
+  font-size: 0.78125px;
+  font-size: 1.25em;
+}
+/* line 194, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content .meta a,
+.feature .main-content .meta time {
+  margin: 0 0 0.3em;
+  color: #008988;
+  position: relative;
+  overflow: hidden;
+}
+/* line 202, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content .meta ul {
+  display: block;
+  position: relative;
+  margin: 0 0 0.3em;
+}
+/* line 207, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content .meta li {
+  display: inline-block;
+}
+/* line 210, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content .meta time {
+  display: block;
+}
+/* line 214, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .main-content .post-title {
+  overflow: visible;
+  line-height: 0.8em;
+  font-family: "neuzeit-grotesk-condensed", sans-serif;
+  font-weight: 900;
+  color: #d96459;
+  letter-spacing: -0.05em;
+  font-size: 1.625px;
+  font-size: 2.6em;
+}
+/* line 228, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .words {
+  max-width: 450px;
+  margin: 1.5em auto;
+  display: block;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em;
+}
+/* line 239, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .words h1,
+.feature .words h2,
+.feature .words h3,
+.feature .words h4,
+.feature .words h5,
+.feature .words h6,
+.feature .words p,
+.feature .words blockquote {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 0.625px;
+  font-size: 1em;
+  color: #333745;
+  padding: 0;
+  margin: 0 0 0.5em;
+  text-align: left;
+  letter-spacing: 0;
+  text-shadow: 0px 0px 2px #f8f8dd;
+}
+/* line 257, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.feature .words ul,
+.feature .words ol,
+.feature .words h1,
+.feature .words h2,
+.feature .words h3,
+.feature .words h4,
+.feature .words h5,
+.feature .words h6 {
+  display: none;
+}
+
+/* line 270, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2ae72;
+  padding: 1.5em 1.5em 3em;
+}
+/* line 275, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .main-content {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+/* line 281, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .section-title {
+  color: #f8f8dd;
+}
+/* line 284, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item {
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 95%;
+  max-width: 400px;
+  margin: 1.5em auto 0;
+}
+/* line 291, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item h1,
+.recent-posts .post-item h3,
+.recent-posts .post-item time {
+  color: #333745;
+  display: block;
+  width: 90%;
+  margin: 0.5em auto 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-shadow: 2px 2px 1px rgba(51, 55, 69, 0);
+}
+/* line 301, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item h3 {
+  font-weight: 200;
+  font-size: 1.5625px;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+/* line 307, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item h1 {
+  font-weight: 700;
+  font-size: 0.9375px;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+/* line 313, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item hr {
+  width: 80%;
+  height: 0.12vw;
+  border: none;
+  background-color: #333745;
+  position: relative;
+  margin: 1.2em auto 0.75em;
+  box-shadow: 2px 2px 1px rgba(51, 55, 69, 0);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 325, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item time {
+  width: 85%;
+  letter-spacing: 0.1em;
+  font-size: 0.6875px;
+  font-size: 1.1em;
+}
+/* line 330, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item img {
+  border: 1vw solid #f8f8dd;
+  margin: 5% 0;
+  box-shadow: 5px 5px 3px rgba(51, 55, 69, 0.7);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 338, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item:hover h1,
+.recent-posts .post-item:hover h3,
+.recent-posts .post-item:hover time {
+  color: #f8f8dd;
+  text-shadow: 2px 2px 1px rgba(51, 55, 69, 0.4);
+}
+/* line 345, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item:hover hr {
+  background-color: #f8f8dd;
+  box-shadow: 2px 2px 1px rgba(51, 55, 69, 0.4);
+}
+/* line 350, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.recent-posts .post-item:hover img {
+  box-shadow: 2px 2px 1px rgba(51, 55, 69, 0.7);
+}
+
+/* line 357, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0px -5px 6px rgba(51, 55, 69, 0.7);
+}
+/* line 370, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact:before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  opacity: 0.7;
+  background-color: #008988;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: lighten;
+}
+/* line 385, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact h1 {
+  color: #f8f8dd;
+  display: block;
+  width: 90%;
+  margin: 0.5em auto 0;
+  letter-spacing: -0.05em;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.875px;
+  font-size: 3em;
+}
+/* line 395, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact .main-content {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5em 0 3em;
+  z-index: 1;
+}
+/* line 403, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group {
+  padding: 1.5em 2vw 3em;
+  width: 95%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  overflow-y: scroll;
+  visibility: visible;
+}
+/* line 421, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group {
+  max-width: 400px;
+  margin: 0.7em auto;
+}
+/* line 424, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group label,
+.main-bg.contact form.railscf-form-group .form-group input,
+.main-bg.contact form.railscf-form-group .form-group textarea {
+  padding: 0.5em;
+  border: none;
+  font-size: 0.5625px;
+  font-size: 0.9em;
+  display: block;
+  width: 100%;
+  font-family: "neuzeit-grotesk", sans-serif;
+}
+/* line 434, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group label {
+  margin: 0.5em 0 0;
+  font-weight: 200;
+  text-transform: lowercase;
+  color: #f8f8dd;
+}
+/* line 440, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group textarea {
+  width: 100%;
+  min-height: 10em !important;
+}
+/* line 444, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group input,
+.main-bg.contact form.railscf-form-group .form-group textarea {
+  border: 5px solid #daede2;
+  background-color: #f8f8dd;
+  opacity: 0.6;
+  border-radius: 0;
+  color: #333745;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  box-shadow: 5px 5px 4px rgba(51, 55, 69, 0.5);
+}
+/* line 453, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group input:focus,
+.main-bg.contact form.railscf-form-group .form-group textarea:focus {
+  opacity: 1;
+  background-color: #f8f8dd;
+  box-shadow: 3px 3px 2px rgba(51, 55, 69, 0.7);
+}
+/* line 460, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group .btn_default, .main-bg.contact form.railscf-form-group .form-group button, .main-bg.contact form.railscf-form-group .form-group .btn-default {
+  background-color: #008988;
+  border-color: #008988;
+  border-width: 5px;
+  color: #f8f8dd;
+  border-radius: 0;
+  padding: 0.5em 1.5em;
+}
+/* line 467, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group .btn_default:hover, .main-bg.contact form.railscf-form-group .form-group button:hover, .main-bg.contact form.railscf-form-group .form-group .btn-default:hover {
+  color: #008988;
+  background-color: transparent;
+}
+/* line 472, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group .input-group-captcha {
+  width: 100%;
+}
+/* line 474, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+.main-bg.contact form.railscf-form-group .form-group .input-group-captcha img {
+  margin: 0.5em 0;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 750px) {
+  /* line 526, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .main-bg.home .main-content .center-piece {
+    font-size: 0.5px;
+    font-size: 0.8em;
+  }
+  /* line 528, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .main-bg.home .main-content .center-piece .btn_default {
+    max-width: 150px;
+  }
+
+  /* line 533, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature:after {
+    opacity: 1;
+    border-width: 0 0 120vh 95vh;
+  }
+
+  /* line 539, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature .img {
+    width: 45%;
+    height: 35vw;
+    margin: 1.5em 5% 3em 0;
+    float: right;
+    border-color: #d96459;
+  }
+  /* line 547, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature .main-content {
+    padding: 1.5em 0.5em 3em;
+    max-width: 900px;
+  }
+  /* line 550, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature .main-content .post-title,
+  .feature .main-content .meta {
+    width: 46%;
+    max-width: 100%;
+    display: inline-block;
+    margin: 0 1% 0.5em;
+  }
+  /* line 561, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature .main-content .post-title {
+    text-align: right;
+    font-size: 1.75px;
+    font-size: 2.8em;
+  }
+  /* line 567, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature .words {
+    float: left;
+    width: 45%;
+    max-width: 450px;
+    margin: 1.5em 1%;
+  }
+  /* line 573, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature .btn_default {
+    margin: 1.5em 0 1.5em 22%;
+  }
+
+  /* line 578, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .recent-posts .post-item {
+    display: inline-block;
+    width: 45%;
+    margin: 1.5em 2% 0;
+    vertical-align: top;
+  }
+}
+@media screen and (min-width: 875px) {
+  /* line 588, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .main-bg.home .main-content .center-piece {
+    font-size: 0.625px;
+    font-size: 1em;
+  }
+  /* line 590, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .main-bg.home .main-content .center-piece .btn_default {
+    max-width: 200px;
+  }
+
+  /* line 595, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature:after {
+    opacity: 1;
+    border-width: 0 0 120vh 120vh;
+  }
+}
+@media screen and (min-width: 1023px) {
+  /* line 604, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature:after {
+    border-width: 0 0 120vh 140vh;
+  }
+
+  /* line 609, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .recent-posts .post-item {
+    display: inline-block;
+    width: 29%;
+    margin: 1.5em 2% 0;
+    vertical-align: top;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 620, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature:after {
+    border-width: 0 0 120vh 160vh;
+  }
+
+  /* line 625, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .recent-posts .post-item {
+    display: inline-block;
+    width: 20%;
+    margin: 1.5em 2% 0;
+    vertical-align: top;
+  }
+  /* line 630, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .recent-posts .post-item h3 {
+    font-size: 1.25px;
+    font-size: 2em;
+  }
+  /* line 633, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .recent-posts .post-item h1 {
+    font-size: 0.75px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 645, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_home.scss */
+  .feature:after {
+    border-width: 0 0 120vh 180vh;
+  }
+}
+/* line 1, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* line 8, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.main-bg.blog,
+.main-bg.pages,
+.main-bg.cats,
+.main-bg.portfolio {
+  position: static;
+}
+/* line 12, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.main-bg.blog img,
+.main-bg.pages img,
+.main-bg.cats img,
+.main-bg.portfolio img {
+  max-width: 400px;
+}
+
+/* line 45, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 5%;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+/* line 58, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content .tech {
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  margin: 0.5em auto 1.5em;
+}
+/* line 64, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content .tech h3 {
+  font-size: 0.75px;
+  font-size: 1.2em;
+  width: auto;
+  text-align: center;
+  color: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  border-bottom: 2px solid #daede2;
+  display: inline-block;
+  padding: 0 0.3em 0.35em;
+}
+/* line 75, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content .tech ul {
+  display: block;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+/* line 81, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content .tech li {
+  clear: both;
+  font-size: 0.5px;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  width: auto;
+  padding: 0.5em 0 0;
+  margin: 0;
+}
+/* line 92, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content ol,
+.post-page .post-content .item-content ul {
+  display: block;
+  position: relative;
+  width: 90%;
+  padding: 0.5em;
+  margin: 0.5em 0 0.5em 3%;
+  color: inherit;
+}
+/* line 100, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content ol li,
+.post-page .post-content .item-content ul li {
+  width: 80%;
+  margin: 0 0 0.5em 2%;
+  line-height: 1.3em;
+  color: inherit;
+}
+/* line 107, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content blockquote {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 3em 1.5em;
+  margin: 1.5em 0;
+  border-bottom: 1px solid #f8f8dd;
+  border-top: 1px solid #f8f8dd;
+  background-color: rgba(218, 237, 226, 0.3);
+}
+/* line 116, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content blockquote h1,
+.post-page .post-content .item-content blockquote h2,
+.post-page .post-content .item-content blockquote h3,
+.post-page .post-content .item-content blockquote h4,
+.post-page .post-content .item-content blockquote h5,
+.post-page .post-content .item-content blockquote h6 {
+  width: 90%;
+  margin: 0 0 1.5em;
+  color: inherit;
+  text-align: center;
+}
+/* line 127, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content blockquote p {
+  display: block;
+  position: relative;
+  width: 85%;
+  margin: 0 7%;
+  font-size: 0.75px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: inherit;
+}
+/* line 138, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content blockquote p:before, .post-page .post-content .item-content blockquote p:after {
+  position: absolute;
+  font-size: 1.4375px;
+  font-size: 2.3em;
+  font-family: "neuzeit-grotesk-condensed", sans-serif;
+  font-weight: 900;
+  width: 20px;
+  height: 20px;
+}
+/* line 147, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content blockquote p:before {
+  content: '\201C';
+  top: 0.5em;
+  left: -40px;
+}
+/* line 152, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content blockquote p:after {
+  content: '\201D';
+  bottom: 0.2em;
+  right: -30px;
+}
+/* line 159, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content h1,
+.post-page .post-content .item-content h2,
+.post-page .post-content .item-content h3,
+.post-page .post-content .item-content h4,
+.post-page .post-content .item-content h5,
+.post-page .post-content .item-content h6 {
+  color: inherit;
+}
+/* line 168, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content h1 {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  font-size: 1.875px;
+  font-size: 3em;
+}
+/* line 173, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content h2 {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 1.5625px;
+  font-size: 2.5em;
+}
+/* line 178, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content h3 {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 1.4375px;
+  font-size: 2.3em;
+}
+/* line 183, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content h4 {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  font-size: 1.875px;
+  font-size: 3em;
+}
+/* line 198, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content time {
+  color: inherit;
+  margin: 0.5em auto 1.5em;
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 200;
+  display: block;
+  letter-spacing: 0.1em;
+  font-size: 0.5px;
+  font-size: 0.8em;
+  font-style: italic;
+}
+/* line 210, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content p, .post-page .post-content .item-content span {
+  position: relative;
+  padding: 0.5em 0;
+  font-size: 0.625px;
+  font-size: 1em;
+  line-height: 1.3em;
+  color: inherit;
+}
+/* line 217, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page .post-content .item-content img {
+  width: 100%;
+  position: relative;
+  height: auto !important;
+  margin: 3%;
+  border: 1px solid #f8f8dd;
+}
+
+/* line 226, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio,
+.post-page.category_Blog,
+.post-page.category_Music {
+  background-color: #3e4354;
+  background-color: #008988;
+  position: relative;
+  overflow: hidden;
+  color: #daede2;
+}
+/* line 234, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-thumb,
+.post-page.category_Blog .post-thumb,
+.post-page.category_Music .post-thumb {
+  margin: 0 auto 1.5em;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+/* line 240, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header,
+.post-page.category_Blog .post-header,
+.post-page.category_Music .post-header {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  max-width: 1180px;
+  margin: 10vh auto 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+/* line 251, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header:before,
+.post-page.category_Blog .post-header:before,
+.post-page.category_Music .post-header:before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333745;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: hard-light;
+}
+/* line 265, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header .post-title,
+.post-page.category_Portfolio .post-header .meta,
+.post-page.category_Blog .post-header .post-title,
+.post-page.category_Blog .post-header .meta,
+.post-page.category_Music .post-header .post-title,
+.post-page.category_Music .post-header .meta {
+  width: 95%;
+  max-width: 450px;
+  display: block;
+  margin: 3em auto 0;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+/* line 277, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header .meta,
+.post-page.category_Blog .post-header .meta,
+.post-page.category_Music .post-header .meta {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  color: #daede2;
+  font-size: 0.78125px;
+  font-size: 1.25em;
+}
+/* line 285, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header .meta a,
+.post-page.category_Portfolio .post-header .meta time,
+.post-page.category_Blog .post-header .meta a,
+.post-page.category_Blog .post-header .meta time,
+.post-page.category_Music .post-header .meta a,
+.post-page.category_Music .post-header .meta time {
+  margin: 0 0 0.3em;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+/* line 293, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header .meta ul,
+.post-page.category_Blog .post-header .meta ul,
+.post-page.category_Music .post-header .meta ul {
+  display: block;
+  position: relative;
+  margin: 0 0 0.3em;
+  color: inherit;
+}
+/* line 299, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header .meta li,
+.post-page.category_Blog .post-header .meta li,
+.post-page.category_Music .post-header .meta li {
+  display: inline-block;
+  text-transform: capitalize;
+  color: inherit;
+}
+/* line 304, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header .meta time,
+.post-page.category_Blog .post-header .meta time,
+.post-page.category_Music .post-header .meta time {
+  display: block;
+}
+/* line 308, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-header .post-title,
+.post-page.category_Blog .post-header .post-title,
+.post-page.category_Music .post-header .post-title {
+  overflow: visible;
+  line-height: 0.8em;
+  font-family: "neuzeit-grotesk-condensed", sans-serif;
+  font-weight: 900;
+  color: #daede2;
+  letter-spacing: -0.05em;
+  font-size: 1.25px;
+  font-size: 2em;
+  line-height: 0.9em;
+}
+/* line 323, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .post-content,
+.post-page.category_Blog .post-content,
+.post-page.category_Music .post-content {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 0 3em;
+  z-index: 1;
+}
+/* line 331, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio aside,
+.post-page.category_Blog aside,
+.post-page.category_Music aside {
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 336, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio aside h1,
+.post-page.category_Blog aside h1,
+.post-page.category_Music aside h1 {
+  color: inherit;
+  font-size: 1.375px;
+  font-size: 2.2em;
+  opacity: 0.8;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 346, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio {
+  background-color: #f8f8dd;
+  color: #333745;
+}
+/* line 351, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .tech h3 {
+  border-bottom: 2px solid #333745 !important;
+}
+/* line 357, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .recent a {
+  border-color: #333745;
+}
+/* line 361, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio blockquote {
+  background-color: rgba(242, 174, 114, 0.5) !important;
+}
+/* line 366, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .gallery .item {
+  border-color: #333745;
+}
+/* line 369, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Portfolio .gallery .image {
+  border-color: #333745;
+}
+
+/* line 375, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Music {
+  background-color: #d96459;
+  color: #f8f8dd;
+}
+/* line 381, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Music .recent a {
+  border-color: #f8f8dd;
+}
+/* line 386, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Music .gallery .item {
+  border-color: #f8f8dd;
+}
+/* line 389, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.post-page.category_Music .gallery .image {
+  border-color: #f8f8dd;
+}
+
+/* line 396, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.close-modal {
+  z-index: -100000;
+  font-size: 1.4375px;
+  font-size: 2.3em;
+  text-align: right;
+  display: block;
+  width: 30%;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #FF462D;
+  font-weight: 900;
+  text-transform: lowercase;
+  cursor: pointer;
+  text-shadow: 5px 5px 2px rgba(51, 55, 69, 0.7);
+}
+/* line 413, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.close-modal.show {
+  z-index: 100000000;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* line 420, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery {
+  position: relative;
+  display: block;
+  margin: 1.5em auto;
+  max-width: 1180px;
+  width: 100%;
+}
+/* line 432, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 80vw;
+  vertical-align: top;
+  border-bottom: 2px solid #daede2;
+  margin: 0 auto;
+  padding: 0 0 0.5em;
+  cursor: pointer;
+  z-index: 10;
+}
+/* line 444, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 100vh;
+  opacity: 0;
+  z-index: -10000;
+  overflow: visable;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow-y: scroll;
+  background: rgba(51, 55, 69, 0.95);
+  margin: 0 auto 10em;
+}
+/* line 460, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal .next,
+.gallery .item.modal .previous {
+  display: none;
+  position: fixed;
+  bottom: 5vh;
+  z-index: 200000;
+  width: 20%;
+}
+/* line 469, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal .next {
+  left: 7vw;
+}
+/* line 472, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal .previous {
+  text-align: right;
+  right: 7vw;
+}
+/* line 477, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal img {
+  top: 2vh;
+  width: 95vw;
+  overflow: visible;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  z-index: -100000;
+  box-shadow: 0px 0px 20px 3px #08080a;
+}
+/* line 492, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal h3 {
+  position: absolute;
+  top: 60%;
+  width: 60%;
+  left: 20%;
+  text-align: center;
+  font-size: 1.875px;
+  font-size: 3em;
+}
+/* line 503, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal p {
+  position: absolute;
+  top: 75%;
+  width: 60%;
+  left: 20%;
+  text-align: center;
+  font-size: 1.25px;
+  font-size: 2em;
+}
+/* line 527, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal.show {
+  display: block;
+  z-index: 1000;
+  opacity: 1;
+}
+/* line 529, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal.show img {
+  z-index: 100000;
+}
+/* line 532, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item.modal.show h3,
+.gallery .item.modal.show p {
+  z-index: 200000;
+}
+/* line 540, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item h3 {
+  font-size: 0.8125px;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 0.5em auto;
+  width: 80%;
+  z-index: 10;
+  color: inherit;
+}
+/* line 549, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item p {
+  width: 80%;
+  font-size: 0.5px;
+  font-size: 0.8em;
+  z-index: 10;
+  color: inherit;
+  overflow: visible;
+  line-height: 1.2em;
+  margin: 0.5em auto;
+}
+/* line 558, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.gallery .item .image {
+  position: relative;
+  width: 95%;
+  height: 15em;
+  max-width: 500px;
+  max-height: 400px;
+  overflow: hidden;
+  background-position: center 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5em auto 0.5em;
+  border: 2px solid #daede2;
+  z-index: 10;
+}
+
+/* line 575, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.recent {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5em;
+  z-index: 2;
+  color: inherit;
+}
+/* line 584, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.recent a {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1.5em 0.5em;
+  color: #daede2;
+  color: inherit;
+  border-bottom: 2px solid #daede2;
+  z-index: 10;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 597, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.recent a:nth-of-type(1) {
+  margin: 1.5em auto 0;
+}
+/* line 601, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.recent a:hover {
+  background: rgba(218, 237, 226, 0.5);
+}
+/* line 604, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.recent a h5 {
+  font-weight: 900;
+  display: block;
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  color: inherit;
+}
+/* line 612, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.recent a time {
+  font-weight: 200;
+  color: inherit;
+}
+
+/* line 620, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages {
+  position: relative;
+  overflow: hidden;
+}
+/* line 623, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages.contact .main-bg, .container-fluid.pages.about-me .main-bg {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  opacity: 1;
+}
+/* line 634, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages.contact .main-bg:before, .container-fluid.pages.about-me .main-bg:before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #333745;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+/* line 650, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages.about-me .page-content {
+  background-color: rgba(217, 100, 89, 0.5);
+  color: #daede2;
+}
+/* line 665, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .post-title {
+  text-align: center;
+  margin: 3em 0 1.5em;
+  color: #daede2;
+  letter-spacing: -0.05em;
+}
+/* line 671, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content {
+  width: 100%;
+  max-width: 850px;
+  margin: 1.5em auto 0;
+  padding: 5%;
+  overflow-y: scroll;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: block;
+  visibility: visible;
+}
+/* line 682, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content ol,
+.container-fluid.pages .page-content ul {
+  display: block;
+  position: relative;
+  width: 90%;
+  padding: 0.5em;
+  margin: 0.5em 0 0.5em 3%;
+}
+/* line 689, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content ol li,
+.container-fluid.pages .page-content ul li {
+  width: 80%;
+  margin: 0 0 0.5em 2%;
+  line-height: 1.3em;
+  color: #daede2;
+}
+/* line 696, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content a {
+  color: #008988;
+}
+/* line 699, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content blockquote {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 3em 1.5em;
+  margin: 1.5em 0;
+  border-bottom: 1px solid rgba(223, 223, 223, 0.9);
+  border-bottom: 1px solid #daede2;
+  border-top: 1px solid rgba(223, 223, 223, 0.9);
+  border-top: 1px solid #daede2;
+  background-color: rgba(1, 34, 64, 0.4);
+  background-color: rgba(223, 223, 223, 0.7);
+}
+/* line 711, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content blockquote h1,
+.container-fluid.pages .page-content blockquote h2,
+.container-fluid.pages .page-content blockquote h3,
+.container-fluid.pages .page-content blockquote h4,
+.container-fluid.pages .page-content blockquote h5,
+.container-fluid.pages .page-content blockquote h6 {
+  width: 90%;
+  margin: 0 0 1.5em;
+  color: #daede2;
+}
+/* line 721, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content blockquote p {
+  display: block;
+  position: relative;
+  width: 85%;
+  margin: 0 7%;
+  font-size: 0.75px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: #daede2;
+}
+/* line 732, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content blockquote p:before, .container-fluid.pages .page-content blockquote p:after {
+  position: absolute;
+  font-size: 1.4375px;
+  font-size: 2.3em;
+  font-family: "neuzeit-grotesk-condensed", sans-serif;
+  font-weight: 900;
+  width: 20px;
+  height: 20px;
+}
+/* line 741, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content blockquote p:before {
+  content: '\201C';
+  top: 0.5em;
+  left: -40px;
+}
+/* line 746, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content blockquote p:after {
+  content: '\201D';
+  bottom: 0.2em;
+  right: -30px;
+}
+/* line 753, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content h1,
+.container-fluid.pages .page-content h2,
+.container-fluid.pages .page-content h3,
+.container-fluid.pages .page-content h4,
+.container-fluid.pages .page-content h5,
+.container-fluid.pages .page-content h6 {
+  color: #daede2;
+}
+/* line 761, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content h1 {
+  display: block;
+  width: 100%;
+  margin: 0 auto 0.5em;
+  font-size: 1.25px;
+  font-size: 2em;
+  font-family: "neuzeit-grotesk", sans-serif;
+  text-align: center;
+}
+/* line 772, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content p {
+  position: relative;
+  padding: 0.5em 0;
+  font-size: 0.625px;
+  font-size: 1em;
+  line-height: 1.3em;
+  color: #daede2;
+}
+/* line 779, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages .page-content img {
+  width: 100%;
+  position: relative;
+  height: auto !important;
+  margin: 3%;
+  border: 1px solid #008988;
+}
+/* line 787, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group {
+  padding: 1.5em 2vw 3em;
+  width: 95%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+/* line 804, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group {
+  max-width: 400px;
+  margin: 0.7em auto;
+}
+/* line 807, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group label,
+.container-fluid.pages form.railscf-form-group .form-group input,
+.container-fluid.pages form.railscf-form-group .form-group textarea {
+  padding: 0.5em;
+  border: none;
+  font-size: 0.5625px;
+  font-size: 0.9em;
+  display: block;
+  width: 100%;
+  font-family: "neuzeit-grotesk", sans-serif;
+}
+/* line 817, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group label {
+  margin: 0.5em 0 0;
+  font-weight: 200;
+  text-transform: lowercase;
+  color: #008988;
+}
+/* line 823, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group textarea {
+  width: 100%;
+  min-height: 10em !important;
+}
+/* line 827, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group input,
+.container-fluid.pages form.railscf-form-group .form-group textarea {
+  border: 5px solid #daede2;
+  background-color: #daede2;
+  opacity: 0.6;
+  border-radius: 0;
+  color: #333745;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  box-shadow: 5px 5px 4px rgba(51, 55, 69, 0.5);
+}
+/* line 836, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group input:focus,
+.container-fluid.pages form.railscf-form-group .form-group textarea:focus {
+  opacity: 1;
+  background-color: #daede2;
+  box-shadow: 3px 3px 2px rgba(51, 55, 69, 0.7);
+}
+/* line 842, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group .btn_default,
+.container-fluid.pages form.railscf-form-group .form-group button,
+.container-fluid.pages form.railscf-form-group .form-group .btn-default {
+  background-color: #008988;
+  border-color: #008988;
+  border-width: 5px;
+  color: #daede2;
+  border-radius: 0;
+  padding: 0.5em 1.5em;
+}
+/* line 851, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group .btn_default:hover,
+.container-fluid.pages form.railscf-form-group .form-group button:hover,
+.container-fluid.pages form.railscf-form-group .form-group .btn-default:hover {
+  color: #008988;
+  background-color: transparent;
+}
+/* line 856, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group .input-group-captcha {
+  width: 100%;
+}
+/* line 858, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+.container-fluid.pages form.railscf-form-group .form-group .input-group-captcha img {
+  margin: 0.5em 0;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 750px) {
+  /* line 898, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page .post-content .item-content {
+    padding: 0;
+    margin: 1.5em auto 0;
+    width: 45%;
+    order: 2;
+  }
+
+  /* line 911, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio .post-thumb,
+  .post-page.category_Blog .post-thumb,
+  .post-page.category_Music .post-thumb {
+    display: none;
+  }
+  /* line 914, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio .container,
+  .post-page.category_Blog .container,
+  .post-page.category_Music .container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 919, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio .post-content,
+  .post-page.category_Blog .post-content,
+  .post-page.category_Music .post-content {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 923, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio .post-header,
+  .post-page.category_Blog .post-header,
+  .post-page.category_Music .post-header {
+    z-index: 1;
+    padding: 9em 0;
+    margin: 15vh auto 5vh;
+  }
+  /* line 928, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio .post-header .post-title,
+  .post-page.category_Portfolio .post-header .meta,
+  .post-page.category_Blog .post-header .post-title,
+  .post-page.category_Blog .post-header .meta,
+  .post-page.category_Music .post-header .post-title,
+  .post-page.category_Music .post-header .meta {
+    width: 46%;
+    max-width: 100%;
+    display: inline-block;
+    margin: 0 1% 0.5em;
+  }
+  /* line 935, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio .post-header .post-title,
+  .post-page.category_Blog .post-header .post-title,
+  .post-page.category_Music .post-header .post-title {
+    text-align: right;
+    font-size: 1.5625px;
+    font-size: 2.5em;
+    padding: 0 0 0 5%;
+  }
+  /* line 941, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio aside,
+  .post-page.category_Blog aside,
+  .post-page.category_Music aside {
+    position: relative;
+    width: 25%;
+    padding: 1.5em;
+    margin: 5.25em 0 0;
+  }
+  /* line 947, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio aside.recent,
+  .post-page.category_Blog aside.recent,
+  .post-page.category_Music aside.recent {
+    order: 1;
+  }
+  /* line 952, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .post-page.category_Portfolio aside.gallery,
+  .post-page.category_Blog aside.gallery,
+  .post-page.category_Music aside.gallery {
+    order: 2;
+  }
+
+  /* line 960, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .gallery .item {
+    width: 100%;
+  }
+  /* line 968, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .gallery .item.modal img {
+    top: 10vh;
+    width: auto;
+    height: 70vh;
+  }
+  /* line 974, /Users/Austin/Documents/Projects/betta_rails/app/assets/stylesheets/scss/_blog.scss */
+  .gallery .item .image {
+    width: 90%;
+    height: 25vh;
+  }
+}
