@@ -546,6 +546,7 @@
         }
         .main-content {
             @include padding($md-sp-unit $sm-sp-unit $lg-sp-unit);
+            max-width: 900px;
             .post-title,
             .meta {
                 width: 46%;
