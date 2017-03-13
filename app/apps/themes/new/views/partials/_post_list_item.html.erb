@@ -5,7 +5,8 @@
 		               	<h3><%= post_tag.the_title %></h3>
 		            <% end %>
 			<% end %>
-	    	<img src="<%= raw post.the_thumb_url() if post.has_thumb?%>">
+	    	<!-- <img src="<%= raw post.the_thumb_url() if post.has_thumb?%>"> -->
+	    	<div class="img" style="background-image: url(<%= raw post.the_thumb_url() if post.has_thumb?%>)"></div>
 
 	        <h1><%= raw post.the_title.truncate(55) %></h1>
 	        <hr />
